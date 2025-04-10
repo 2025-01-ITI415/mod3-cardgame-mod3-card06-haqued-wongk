@@ -10,7 +10,7 @@
             "y": 2,
             "faceUp": false,
             "layer": 1,
-            "hiddenBy": [ "t3", "t4" ]
+            "hiddenByString": "t3,t4"
         },
         {
             "id": "t1",
@@ -18,7 +18,7 @@
             "y": 2,
             "faceUp": false,
             "layer": 1,
-            "hiddenBy": [ "t4", "t5" ]
+            "hiddenByString": "t4,t5"
         },
         {
             "id": "t2",
@@ -26,44 +26,47 @@
             "y": 2,
             "faceUp": false,
             "layer": 1,
-            "hiddenBy": [ "t5", "t6" ]
+            "hiddenByString": "t5,t6"
         },
-
         {
             "id": "t3",
             "x": -4.5,
             "y": 0,
             "faceUp": true,
-            "layer": 1
+            "layer": 1,
+            "hiddenByString": ""
         },
         {
             "id": "t4",
             "x": -1.5,
             "y": 0,
             "faceUp": true,
-            "layer": 1
+            "layer": 1,
+            "hiddenByString": ""
         },
         {
             "id": "t5",
             "x": 1.5,
             "y": 0,
             "faceUp": true,
-            "layer": 1
+            "layer": 1,
+            "hiddenByString": ""
         },
         {
             "id": "t6",
             "x": 4.5,
             "y": 0,
             "faceUp": true,
-            "layer": 1
+            "layer": 1,
+            "hiddenByString": ""
         },
-
         {
             "id": "drawpile",
             "x": 6,
             "y": 5,
             "layer": 0,
             "type": "drawpile",
+            "hiddenByString": "",
             "stagger": {
                 "x": 0.1,
                 "y": 0
@@ -74,14 +77,16 @@
             "x": 4,
             "y": 5,
             "layer": 0,
-            "type": "discardpile"
+            "type": "discardpile",
+            "hiddenByString": ""
         },
         {
             "id": "target",
             "x": 0,
             "y": 5,
             "layer": 0,
-            "type": "target"
+            "type": "target",
+            "hiddenByString": ""
         }
     ]
 }
