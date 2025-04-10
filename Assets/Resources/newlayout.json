@@ -1,0 +1,87 @@
+﻿{
+    "multiplier": {
+        "x": 3,
+        "y": 4
+    },
+    "slots": [
+        {
+            "id": "t0",
+            "x": -3,
+            "y": 2,
+            "faceUp": false,
+            "layer": 1,
+            "hiddenBy": [ "t3", "t4" ]
+        },
+        {
+            "id": "t1",
+            "x": 0,
+            "y": 2,
+            "faceUp": false,
+            "layer": 1,
+            "hiddenBy": [ "t4", "t5" ]
+        },
+        {
+            "id": "t2",
+            "x": 3,
+            "y": 2,
+            "faceUp": false,
+            "layer": 1,
+            "hiddenBy": [ "t5", "t6" ]
+        },
+
+        {
+            "id": "t3",
+            "x": -4.5,
+            "y": 0,
+            "faceUp": true,
+            "layer": 1
+        },
+        {
+            "id": "t4",
+            "x": -1.5,
+            "y": 0,
+            "faceUp": true,
+            "layer": 1
+        },
+        {
+            "id": "t5",
+            "x": 1.5,
+            "y": 0,
+            "faceUp": true,
+            "layer": 1
+        },
+        {
+            "id": "t6",
+            "x": 4.5,
+            "y": 0,
+            "faceUp": true,
+            "layer": 1
+        },
+
+        {
+            "id": "drawpile",
+            "x": 6,
+            "y": 5,
+            "layer": 0,
+            "type": "drawpile",
+            "stagger": {
+                "x": 0.1,
+                "y": 0
+            }
+        },
+        {
+            "id": "discardpile",
+            "x": 4,
+            "y": 5,
+            "layer": 0,
+            "type": "discardpile"
+        },
+        {
+            "id": "target",
+            "x": 0,
+            "y": 5,
+            "layer": 0,
+            "type": "target"
+        }
+    ]
+}
