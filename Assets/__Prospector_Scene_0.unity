@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a54131c494846e18f26b7181dd2d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonLayoutFile: {fileID: 4900000, guid: 0579412819a174464adf828afde18c5f, type: 3}
+  jsonLayoutFile: {fileID: 4900000, guid: 1c55413b5b39a4d7f9d626089ec9c817, type: 3}
   layout:
     multiplier: {x: 0, y: 0}
     slots: []
@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58377410ab344f308b739cd13d865a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layoutJSON: newlayout
   drawPile: []
   discardPile: []
   mine: []

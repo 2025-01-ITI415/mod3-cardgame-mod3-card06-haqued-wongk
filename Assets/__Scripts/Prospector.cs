@@ -96,7 +96,7 @@ public class Prospector : MonoBehaviour
             jsonLayout.multiplier.y * slot.y,
             -z));                                                       // d
 
-            cp.layoutID = slot.id;
+            int id = slot.layoutID;
             cp.layoutSlot = slot;
             // CardProspectors in the mine have the state CardState.mine
             cp.state = eCardState.mine;

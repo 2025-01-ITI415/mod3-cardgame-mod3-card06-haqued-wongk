@@ -5,7 +5,13 @@ using UnityEngine;
 /// <summary>
 /// The different states a CardGolf card can be in
 /// </summary>
-public enum eGolfCardState { drawpile, tableau, target, discard }
+public enum eGolfCardState
+{
+    drawpile,
+    tableau,
+    target,
+    discard
+}
 
 /// <summary>
 /// A subclass of Card for Golf Solitaire
@@ -13,14 +19,16 @@ public enum eGolfCardState { drawpile, tableau, target, discard }
 public class CardGolf : Card
 {
     [Header("Dynamic: CardGolf")]
+
     public eGolfCardState state = eGolfCardState.drawpile;
-
-    // This list stores other cards that hide this one (useful for face-up logic)
     public List<CardGolf> hiddenBy = new List<CardGolf>();
-
-    // Used to match layout ID from JSON
     public int layoutID;
-
-    // Stores layout info from the JSON
     public JsonLayoutSlot layoutSlot;
+    public bool isFaceUp
+    {
+        get
+        {
+            return state == eGolfCardState.target || state == eGolfCardState.discard || layoutSlot.faceUp;
+        }
+    }
 }

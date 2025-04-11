@@ -20,8 +20,9 @@ public class JsonLayout
 [System.Serializable]
 public class JsonLayoutSlot : ISerializationCallbackReceiver
 {                  // a
-    public int id;
+    public string id;
     public int x;
+    public int layoutID;
     public int y;
     public bool faceUp;
     public string layer;
@@ -33,17 +34,19 @@ public class JsonLayoutSlot : ISerializationCallbackReceiver
     /// <summary>
     /// Pulls data from hiddenByString and places it into the hiddenBy List
     /// </summary>
+    /// 
     public void OnAfterDeserialize()
-    {                                          // c
-        hiddenBy = new List<int>();
-        if (hiddenByString.Length == 0) return;
-
-        string[] bits = hiddenByString.Split(',');
-        for (int i = 0; i < bits.Length; i++)
+    {
+        if (id.StartsWith("t") && int.TryParse(id.Substring(1), out int parsedID))
         {
-            hiddenBy.Add(int.Parse(bits[i]));
+            layoutID = parsedID;
+        }
+        else
+        {
+            layoutID = -1; // handle drawpile/target/etc.
         }
     }
+
 
     /// <summary>
     /// Required by ISerializationCallbackReceiver, but empty in this class
